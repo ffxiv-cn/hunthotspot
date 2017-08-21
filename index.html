@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script src="js/echarts.js"></script>
+		<link rel="stylesheet" href="zui/css/zui.css" />
+		<link rel="stylesheet" href="zui/css/zui-theme-black.css" />
+		<link rel="stylesheet" href="zui/lib/chosen/chosen.min.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="zui/js/zui.js"></script>
+		<script type="text/javascript" src="zui/lib/chosen/chosen.min.js"></script>
+		<script type="text/javascript" src="js/tool.huntspot.js" ></script>
+		<style type="text/css">
+			/*#left_item_list li:nth-child(even) { background-color: rgba(3, 184, 207, 0.27)}*/
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				huntspot.isChrome =  navigator.userAgent.toLowerCase().match(/chrome/) != null;
+				huntspot.changeArea("2_x");
+			})
+		</script>
+	</head>
+
+<body>
+<div class="container-fluid" style="padding-top: 10px; min-width: 900px;">
+<div style="display: block; width: 309px; height: 580px; border: solid black 1px;overflow: hidden; float: left;">
+	<div class="input-group" style="width: 100%">
+		<div class="input-group-btn"  style="width: 100%" id="sc_uc_btns">
+		  <button class="btn btn-info" type="button" id="2_x" onclick="huntspot.changeArea(this.id)">2.x重生之境</button>
+		  <button class="btn" type="button" id="3_x" onclick="huntspot.changeArea(this.id)">3.x苍穹の禁城</button>
+		  <button class="btn" type="button" id="4_x" onclick="huntspot.changeArea(this.id)">4.x红莲の狂潮</button>
+		</div>
+	</div>
+	<div class="input-group" style="width: 100%" id="sc_uc_div">
+		<select data-placeholder="选择一个地区..." id="sc_uc"  class="chosen-select form-control" style="position: absolute; z-index: 5;" >
+			<option value="">  </option>
+		</select>
+	</div>
+	<div style="position:relative; margin: 0px; width: 309px; height: 513px; padding: 0px;  z-index: 4; overflow: hidden;">
+		<div style=" width: 307px; height: 100%; overflow: auto; overflow-x: hidden; padding: 0px; margin: 0px;">
+			<ul class="nav nav-secondary nav-stacked" id="left_item_list"></ul>
+		</div>
+	</div>
+</div>
+<div id="main_bgdiv" style="width: 560px;height:580px; border:  solid black 1px; display: block; float: left; margin-left: 10px;">
+	<div id="main" style="width: 560px;height:580px;"></div>
+</div>		
+</div>		
+</body>
+
+</html>
