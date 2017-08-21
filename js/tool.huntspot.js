@@ -112,7 +112,7 @@ onwer.drawList = function(){
 		//ucs[data[i]["MapID"]] = [data[i]["MapID"],data[i]["MapName"],"",uc_num+1];
 		if(onwer.areas[onwer.curAreaid][data[i]["MapID"]] == undefined)
 			continue;
-		html += html_0.format(data[i]["MapID"],data[i]["Name"],data[i]["MapName"]+" - "+data[i]["Name"]+"("+ data[i]["Type"] +")");
+		html += html_0.format(data[i]["MapID"],data[i]["Name"].replace(" ","%20"),data[i]["MapName"]+" - "+data[i]["Name"]+"("+ data[i]["Type"] +")");
 	}
 			
 	$("#left_item_list").html(html);
@@ -148,7 +148,7 @@ onwer.findMapImg = function(mapId){
 onwer.getHuntData = function(name,name2,name3){
 	console.log("getHuntData",name,name2,name3)
 	var urls = onwer.dataUrl + name;
-	$.ajax({type: "get",url: urls.replace(" ","%20"),async: true,success: function(data) {
+	$.ajax({type: "get",url: urls,async: true,success: function(data) {
 		onwer.huntHis[name] = data;
 		onwer.createData(data,name,name2,name3);
 	} })
