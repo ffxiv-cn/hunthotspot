@@ -41,12 +41,12 @@ onwer.areas = {
 		"156":[156,"摩杜纳","MorDhona",3]
 	},
 	"3_x": {
-		"397":[397,"库尔札斯西部高地","Coerthas Western Highlands",5],
-		"398":[398,"龙堡参天高地","The Dravanian Forelands",5],
-		"399":[399,"龙堡内陆低地","The Dravanian Hinterlands",5],
-		"400":[400,"翻云雾海","The Churning Mists",5],
-		"401":[401,"阿巴拉提亚云海","The Sea of Clouds",5],
-		"402":[402,"魔大陆阿济兹拉","Azys Lla",5]
+		"397":[397,"库尔札斯西部高地","CoerthasWesternHighlands",5],
+		"398":[398,"龙堡参天高地","TheDravanianForelands",5],
+		"399":[399,"龙堡内陆低地","TheDravanianHinterlands",5],
+		"400":[400,"翻云雾海","The ChurningMists",5],
+		"401":[401,"阿巴拉提亚云海","TheSeaofClouds",5],
+		"402":[402,"魔大陆阿济兹拉","AzysLla",5]
 	},
 	"4_x": {}
 }
