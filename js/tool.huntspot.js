@@ -169,7 +169,7 @@ onwer.createData = function (data,name,mapname,mapimg) {
 			arr[42 - temy][temx-1][2] = tem["Counts"];
 		}catch(e){
 			console.log("数据有误！",name,mapname,data[i])
-			new $.zui.Messager('发现非法提交的数据! data = '+JSON.stringify(data[i]), {  type: 'danger'}).show();
+			//new $.zui.Messager('发现非法提交的数据! data = '+JSON.stringify(data[i]), {  type: 'danger'}).show();
 		}
 		
 	}
