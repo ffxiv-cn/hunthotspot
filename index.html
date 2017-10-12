@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>狩猎热点图 - 全部是玩家提交的真实数据</title>
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<script src="js/echarts.min.js"></script>
 		<link rel="stylesheet" href="zui/css/zui.css" />
@@ -24,8 +24,13 @@
 	</head>
 
 <body>
-<div class="container-fluid" style="padding-top: 10px; min-width: 900px;">
-<div style="display: block; width: 309px; height: 580px; border: solid black 1px;overflow: hidden; float: left;">
+<div class="panel" style="margin:10px;width: 880px;">
+  <div class="panel-heading">
+    <span style="font-size:18px;"> 素素大鸡排 - 狩猎热点图</span>
+  </div>
+  <div class="panel-body" style="padding:0px">
+<div class="container-fluid" style="padding: 0px;">
+<div style="display: block; width: 309px; height: 580px; border-right: solid #ddd 1px;overflow: hidden; float: left; ">
 	<div class="input-group" style="width: 100%">
 		<div class="input-group-btn"  style="width: 100%" id="sc_uc_btns">
 		  <button class="btn btn-info" type="button" id="2_x" onclick="huntspot.changeArea(this.id)">2.x重生之境</button>
@@ -44,10 +49,13 @@
 		</div>
 	</div>
 </div>
-<div id="main_bgdiv" style="width: 560px;height:580px; border:  solid black 1px; display: block; float: left; margin-left: 10px;">
+<div id="main_bgdiv" style="width: 560px;height:580px; border:  solid black 0px; display: block; float: right; margin-left: 0px;">
 	<div id="main" style="width: 560px;height:580px;"></div>
 </div>		
-</div>		
+</div>	
+
+  </div>
+</div
 </body>
 
 </html>
