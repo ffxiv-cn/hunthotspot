@@ -48,7 +48,14 @@ onwer.areas = {
 		"401":[401,"阿巴拉提亚云海","TheSeaofClouds",5],
 		"402":[402,"魔大陆阿济兹拉","AzysLla",5]
 	},
-	"4_x": {}
+	"4_x": {
+		'612': [ 612, '基拉巴尼亚边区', 'TheFringes', 4 ],
+		'613': [ 613, '红玉海', 'TheRubySea', 5 ],
+		'614': [ 614, '延夏', 'Yanxia', 5 ],
+		'620': [ 620, '基拉巴尼亚山区', 'ThePeaks', 4 ],
+		'621': [ 621, '基拉巴尼亚湖区', 'TheLochs', 5 ],
+		'622': [ 622, '太阳神草原', 'TheAzimSteppe', 5 ]
+	}
 }
 
 onwer.getMaps = function(mapid){
@@ -169,7 +176,7 @@ onwer.createData = function (data,name,mapname,mapimg) {
 			arr[42 - temy][temx-1][2] = tem["Counts"];
 		}catch(e){
 			console.log("数据有误！",name,mapname,data[i])
-			new $.zui.Messager('发现非法提交的数据! data = '+JSON.stringify(data[i]), {  type: 'danger'}).show();
+			//new $.zui.Messager('发现非法提交的数据! data = '+JSON.stringify(data[i]), {  type: 'danger'}).show();
 		}
 		
 	}
